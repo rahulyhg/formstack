@@ -1,0 +1,43 @@
+{
+    "name": "trendyminds/formstack",
+    "description": "Integrate Formstack into Craft CMS",
+    "type": "craft-plugin",
+    "version": "2.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "formstack"
+    ],
+    "support": {
+        "docs": "https://github.com/trendyminds/formstack/blob/master/README.md",
+        "issues": "https://github.com/trendyminds/formstack/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TrendyMinds",
+            "homepage": "https://trendyminds.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "trendyminds\\formstack\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Formstack",
+        "handle": "formstack",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/trendyminds/formstack/master/CHANGELOG.md",
+        "components": {
+            "formstackService": "trendyminds\\formstack\\services\\FormstackService"
+        },
+        "class": "trendyminds\\formstack\\Formstack"
+    }
+}
