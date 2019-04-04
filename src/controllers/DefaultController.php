@@ -23,6 +23,8 @@ use yii\base\Exception;
  */
 class DefaultController extends Controller
 {
+    protected $allowAnonymous = ['send-form'];
+    
     /**
      * @return mixed
      */
